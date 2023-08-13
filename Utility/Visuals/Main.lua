@@ -71,7 +71,7 @@ local Esp = {
         Player = game.Players,
         LocalPlayer = game.Players.LocalPlayer,
         Camera = workspace.CurrentCamera,
-        RunService = game.RunService,
+        RunService = game.GetService,
         CoreGui = game.CoreGui,
     },
     OffSets = {
@@ -164,7 +164,7 @@ function Esp.Utility:Draw(plr)
     local SkeletonHeadOutline = Esp.Utility:Line()
     local HeadDotInner = Esp.Utility:Circle()
     local HeadDotOuter = Esp.Utility:Circle()
-    local connections = Esp.locals.RunService.Stepped:Connect(function()
+    local connections = game:GetService("RunService").Stepped:Connect(function()
         if Esp.Switches.Master and Esp.Utility:IsAlive(plr) and plr.Character:FindFirstChild("Head") and plr.Character:WaitForChild("Humanoid") 
         and plr ~= Esp.locals.LocalPlayer and Esp.locals.LocalPlayer.Character:WaitForChild("Head") 
         and Esp.Utility:Round((Esp.locals.LocalPlayer.Character.Head.Position - plr.Character.Head.Position).Magnitude) <= Esp.Settings.MaxDistance 
