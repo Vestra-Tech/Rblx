@@ -1,13 +1,13 @@
 # Credits
    
-- xandu#7795 | Owner
-- Shots#3345 | Owner
-    - RegularVynixu#8039 | Helped Develop Logistics For Ms2
+- peepingonya | Owner
+- vestra_shots | Owner
+    - vynixu. | Helped Develop Logistics For Ms2
 
 # Information
 Notes:
 ```
-Discontinued Roblox Development. 13/05/2023 | Long Live Vestra
+Discontinued Roblox Development. 28/11/2022 | Long Live Vestra
 ```
 
 Loadstring:
